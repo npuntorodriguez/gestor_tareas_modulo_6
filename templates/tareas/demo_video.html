@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Video Demo Piano{% endblock %}
+
+{% block content %}
+<h2 class="text-center mb-4">Demo Piano — Música en Colores</h2>
+
+<div class="d-flex justify-content-center">
+    <video width="80%" controls>
+        <source src="/static/oh_santa_noche.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+</div>
+
+<p class="text-center mt-3">
+    <a class="btn btn-primary" href="{% url 'login' %}">Ingresar al gestor de tareas</a>
+</p>
+{% endblock %}
